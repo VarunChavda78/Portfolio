@@ -26,6 +26,12 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Projects data (edit this to add your own projects)
 const projects = [
   {
+    title: 'Strapi Application - on AWS ECS Fargate',
+    description: 'Containerized Strapi CMS with Docker & Docker Compose, configured to use Amazon RDS PostgreSQL as the external database.Provisioned complete AWS infrastructure using Terraform — including ECS cluster, task definitions, Application Load Balancer, RDS PostgreSQL, IAM roles, and networking resources.Built CI/CD pipelines with GitHub Actions, automating Docker image builds, pushes to ECR, and manual Terraform deployments.Deployed Strapi on AWS ECS Fargate with Application Load Balancer for scalability and availability.Integrated CloudWatch monitoring (logs, alarms, dashboards) for ECS service observability.Optimized deployment costs using FARGATE_SPOT capacity provider.',
+    tech: ['Terraform', 'GitHub Actions', 'Docker', 'AWS ECS Fargate', 'AWS RDS PostgreSQL', 'AWS IAM', 'AWS VPC', 'AWS Application Load Balancer', 'AWS CloudWatch'],
+    href: 'https://github.com/VarunChavda78/Strapi_ECS_CloudWatch'
+  },
+  {
     title: 'Skill Spring Freelance Network',
     description: 'Using Django Rest_Framework and React JS. Developed a full-stack freelancing platform using React for the front-end and Django for the back-end. Implemented features like talent search, project proposals, and JWT-based authentication for secure user access. Dockerized and deployed it on AWS EC2 with a Load Balancer and NGINX as a reverse proxy',
     tech: ['React js', 'Django Rest_Framework'],
@@ -36,12 +42,6 @@ const projects = [
     description: 'Using Django Rest_Framework and React JS. Designed and developed a secure banking system using React and Django, featuring user account management, fixed deposit handling, and real-time balance updates. Integrated Django REST framework for seamless API interactions. Dockerized and deployed it on AWS EC2 with a Load Balancer and NGINX as a reverse proxy',
     tech: ['React', 'Django Rest_Framework'],
     href: 'https://github.com/VarunChavda78/Ace-Bank'
-  },
-  {
-    title: 'Music Player System',
-    description: 'Using Python',
-    tech: ['Python'],
-    href: 'https://github.com/VarunChavda78/Music-Player-System'
   }
 ];
 
