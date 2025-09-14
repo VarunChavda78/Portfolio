@@ -23,6 +23,36 @@
 // Current year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Mobile menu toggle
+(function setupMobileMenu() {
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.querySelector('.nav-links');
+  
+  if (!mobileMenuToggle || !navLinks) return;
+  
+  mobileMenuToggle.addEventListener('click', () => {
+    const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+    mobileMenuToggle.setAttribute('aria-expanded', !isExpanded);
+    navLinks.classList.toggle('active');
+  });
+  
+  // Close mobile menu when clicking on a link
+  navLinks.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      navLinks.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+  
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+      navLinks.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+
 // Projects data (edit this to add your own projects)
 const projects = [
   {
