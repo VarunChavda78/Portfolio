@@ -30,10 +30,19 @@ document.getElementById('year').textContent = new Date().getFullYear();
   
   if (!mobileMenuToggle || !navLinks) return;
   
-  mobileMenuToggle.addEventListener('click', () => {
+  // Toggle mobile menu
+  mobileMenuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
     mobileMenuToggle.setAttribute('aria-expanded', !isExpanded);
     navLinks.classList.toggle('active');
+    
+    // Prevent body scroll when menu is open
+    if (!isExpanded) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   });
   
   // Close mobile menu when clicking on a link
@@ -41,6 +50,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
     if (e.target.tagName === 'A') {
       navLinks.classList.remove('active');
       mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
     }
   });
   
@@ -49,6 +59,25 @@ document.getElementById('year').textContent = new Date().getFullYear();
     if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
       navLinks.classList.remove('active');
       mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+  });
+  
+  // Close mobile menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+      navLinks.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+  });
+  
+  // Handle window resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) {
+      navLinks.classList.remove('active');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
     }
   });
 })();
