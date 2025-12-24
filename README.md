@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Personal Portfolio.
 
 A fast, responsive, accessible portfolio built with plain HTML, CSS, and JavaScript. Ready for GitHub Pages.
 
