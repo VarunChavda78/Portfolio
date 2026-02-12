@@ -95,12 +95,6 @@ const projects = [
     description: 'Using Django Rest_Framework and React JS. Developed a full-stack freelancing platform using React for the front-end and Django for the back-end. Implemented features like talent search, project proposals, and JWT-based authentication for secure user access. Dockerized and deployed it on AWS EC2 with a Load Balancer and NGINX as a reverse proxy',
     tech: ['React js', 'Django Rest_Framework'],
     href: 'https://github.com/VarunChavda78/Skill-Spring-Freelance-Network'
-  },
-  {
-    title: 'Ace Bank',
-    description: 'Using Django Rest_Framework and React JS. Designed and developed a secure banking system using React and Django, featuring user account management, fixed deposit handling, and real-time balance updates. Integrated Django REST framework for seamless API interactions. Dockerized and deployed it on AWS EC2 with a Load Balancer and NGINX as a reverse proxy',
-    tech: ['React', 'Django Rest_Framework'],
-    href: 'https://github.com/VarunChavda78/Ace-Bank'
   }
 ];
 
