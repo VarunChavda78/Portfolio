@@ -91,10 +91,10 @@ const projects = [
     href: 'https://github.com/VarunChavda78/Strapi_ECS_CloudWatch'
   },
   {
-    title: 'Skill Spring Freelance Network',
-    description: 'Using Django Rest_Framework and React JS. Developed a full-stack freelancing platform using React for the front-end and Django for the back-end. Implemented features like talent search, project proposals, and JWT-based authentication for secure user access. Dockerized and deployed it on AWS EC2 with a Load Balancer and NGINX as a reverse proxy',
-    tech: ['React js', 'Django Rest_Framework'],
-    href: 'https://github.com/VarunChavda78/Skill-Spring-Freelance-Network'
+    title: 'High Availability Web Hosting on AWS',
+    description: 'Hosted and scaled live websites using EC2, Load Balancer, VPC, Route 53, and S3,Configured DNS, SSL, and domain management for production environments, Implemented Jenkins-based CI/CD pipelines for automatic deployments on code push, Managed multiple Docker containers hosting websites in Linux environment',
+    tech: ['AWS EC2', 'AWS Load Balancer', 'AWS VPC', 'AWS Route 53', 'AWS S3', 'Jenkins', 'Docker', 'Linux'],
+    // href: 'https://github.com/VarunChavda78/High_Availability_Web_Hosting_on_AWS'
   }
 ];
 
