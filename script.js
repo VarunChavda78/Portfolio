@@ -27,16 +27,16 @@ document.getElementById('year').textContent = new Date().getFullYear();
 (function setupMobileMenu() {
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const navLinks = document.querySelector('.nav-links');
-  
+
   if (!mobileMenuToggle || !navLinks) return;
-  
+
   // Toggle mobile menu
   mobileMenuToggle.addEventListener('click', (e) => {
     e.stopPropagation();
     const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
     mobileMenuToggle.setAttribute('aria-expanded', !isExpanded);
     navLinks.classList.toggle('active');
-    
+
     // Prevent body scroll when menu is open
     if (!isExpanded) {
       document.body.style.overflow = 'hidden';
@@ -44,7 +44,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
       document.body.style.overflow = '';
     }
   });
-  
+
   // Close mobile menu when clicking on a link
   navLinks.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
@@ -53,7 +53,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
       document.body.style.overflow = '';
     }
   });
-  
+
   // Close mobile menu when clicking outside
   document.addEventListener('click', (e) => {
     if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
@@ -62,7 +62,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
       document.body.style.overflow = '';
     }
   });
-  
+
   // Close mobile menu on escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && navLinks.classList.contains('active')) {
@@ -71,7 +71,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
       document.body.style.overflow = '';
     }
   });
-  
+
   // Handle window resize
   window.addEventListener('resize', () => {
     if (window.innerWidth > 900) {
@@ -82,41 +82,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
   });
 })();
 
-// Projects data (edit this to add your own projects)
-const projects = [
-  {
-    title: 'Strapi Application - on AWS ECS Fargate',
-    description: 'Containerized Strapi CMS with Docker & Docker Compose, configured to use Amazon RDS PostgreSQL as the external database.Provisioned complete AWS infrastructure using Terraform — including ECS cluster, task definitions, Application Load Balancer, RDS PostgreSQL, IAM roles, and networking resources.Built CI/CD pipelines with GitHub Actions, automating Docker image builds, pushes to ECR, and manual Terraform deployments.Deployed Strapi on AWS ECS Fargate with Application Load Balancer for scalability and availability.Integrated CloudWatch monitoring (logs, alarms, dashboards) for ECS service observability.Optimized deployment costs using FARGATE_SPOT capacity provider.',
-    tech: ['Terraform', 'GitHub Actions', 'Docker', 'AWS ECS Fargate', 'AWS RDS PostgreSQL', 'AWS IAM', 'AWS VPC', 'AWS Application Load Balancer', 'AWS CloudWatch'],
-    href: 'https://github.com/VarunChavda78/Strapi_ECS_CloudWatch'
-  },
-  {
-    title: 'High Availability Web Hosting on AWS',
-    description: 'Hosted and scaled live websites using EC2, Load Balancer, VPC, Route 53, and S3,Configured DNS, SSL, and domain management for production environments, Implemented Jenkins-based CI/CD pipelines for automatic deployments on code push, Managed multiple Docker containers hosting websites in Linux environment',
-    tech: ['AWS EC2', 'AWS Load Balancer', 'AWS VPC', 'AWS Route 53', 'AWS S3', 'Jenkins', 'Docker', 'Linux'],
-    // href: 'https://github.com/VarunChavda78/High_Availability_Web_Hosting_on_AWS'
-  }
-];
-
-// Render projects
-(function renderProjects() {
-  const grid = document.getElementById('projects-grid');
-  if (!grid) return;
-  grid.innerHTML = projects.map((p) => {
-    const tech = p.tech.map((t) => `<span class="badge">${t}</span>`).join('');
-    return `
-      <article class="card">
-        <a href="${p.href}" target="_blank" rel="noopener">
-          <div class="thumb">${p.title}</div>
-        </a>
-        <div class="body">
-          <h3>${p.title}</h3>
-          <p>${p.description}</p>
-          <div class="meta">${tech}</div>
-        </div>
-      </article>
-    `;
-  }).join('');
-})();
+// Projects are now rendered statically in index.html for better SEO & performance.
 
 

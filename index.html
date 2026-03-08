@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Varun Chavda — DevOps Portfolio</title>
-    <meta name="description" content="Personal portfolio of Varun Chavda — DevOps Engineer: cloud, CI/CD, automation, and reliability." />
-    <meta name="color-scheme" content="light dark" />
-    <meta property="og:title" content="Varun Chavda — DevOps Portfolio" />
-    <meta property="og:description" content="Cloud infrastructure, CI/CD pipelines, and automation projects." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://varunchavda078.github.io" />
-    <link rel="icon" href="assets/avatar.svg" />
-    <link rel="preload" href="styles.css" as="style" />
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
-    <script type="application/ld+json">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Varun Chavda — DevOps Portfolio</title>
+  <meta name="description"
+    content="Personal portfolio of Varun Chavda — DevOps Engineer: cloud, CI/CD, automation, and reliability." />
+  <meta name="color-scheme" content="light dark" />
+  <meta property="og:title" content="Varun Chavda — DevOps Portfolio" />
+  <meta property="og:description" content="Cloud infrastructure, CI/CD pipelines, and automation projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://varunchavda078.github.io" />
+  <link rel="icon" href="assets/avatar.svg" />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -28,146 +30,197 @@
         ]
       }
     </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#home" aria-label="Homepage">
-          <img class="brand-avatar" src="assets/avatar.svg" alt="Avatar" />
-          <span class="brand-name">Varun Chavda</span>
-        </a>
-        <nav class="site-nav" aria-label="Primary">
-          <div class="nav-links">
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Homepage">
+        <img class="brand-avatar" src="assets/avatar.svg" alt="Avatar" />
+        <span class="brand-name">Varun Chavda</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+            <span class="icon">☀️</span>
+          </button>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu"
+            aria-expanded="false">
+            <span class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Hello, I’m <span class="accent">Varun Chavda</span>.</h1>
+          <p class="subtitle">I design CI/CD pipelines and reliable cloud infrastructure.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="mailto:varunchavda078@gmail.com">Email Me</a>
+            <a class="btn outline" href="Varun_Chavda_Resume.pdf" target="_blank" rel="noopener">Resume</a>
           </div>
-          <div class="nav-actions">
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
-              <span class="icon">☀️</span>
-            </button>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
-              <span class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </button>
-          </div>
-        </nav>
+        </div>
+        <div class="hero-media">
+          <img src="Photo.jpg" alt="Photo of Varun Chavda" />
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main id="main">
-      <section id="home" class="section hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <h1>Hello, I’m <span class="accent">Varun Chavda</span>.</h1>
-            <p class="subtitle">I design CI/CD pipelines and reliable cloud infrastructure.</p>
-            <div class="actions">
-              <a class="btn primary" href="#projects">View Projects</a>
-              <a class="btn" href="mailto:varunchavda078@gmail.com">Email Me</a>
-              <a class="btn outline" href="Varun_Chavda_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <ul class="timeline">
+          <li>
+            <div class="time">December 2024 - Present</div>
+            <div class="content">
+              <h3>SrashtaSoft • DevOps Engineer / Intern</h3>
+              <ul>
+                <li>Hosted and scaled live websites on AWS (EC2, Load Balancer, VPC, CloudWatch, Route 53, S3), ensuring
+                  high availability and reliability.</li>
+                <li>Implemented CI/CD pipelines using Jenkins and GitHub Actions, with custom workflows for automatic
+                  deployments on every code push.</li>
+                <li>Managed on-premises production container using Docker and Docker-Compose.</li>
+                <li>Hosted and managed WordPress websites on AWS and WebHost, including setup, deployment, DNS
+                  management, and WordPress website migration.</li>
+                <li>Contributed to live projects by managing deployments, domain setups, and SSL configurations.</li>
+                <li>Managed on-premise servers hosting multiple websites in Docker containers, with monitoring for
+                  performance and availability.</li>
+              </ul>
+              <h4>Projects:</h4>
+              <ul>
+                <li><strong>Automated PCAP Analysis Pipeline using AWS & Suricata:</strong> Built an event-driven
+                  security pipeline where network PCAP files uploaded to Amazon S3 trigger AWS Lambda to process data
+                  using a Suricata Docker image stored in Amazon ECR. Executed Suricata analysis inside containers and
+                  streamed generated EVE JSON security logs to Amazon CloudWatch for centralized monitoring.</li>
+                <li><strong>Merizimmedari:</strong> Deployed a React + Django project on server using Docker for
+                  containerization, configured Nginx with SSL on both development and live servers. Created Jenkins
+                  pipeline for both development and production environments.</li>
+                <li><strong>Digital Signage:</strong> Deployed a React + Django project on server using Docker for
+                  containerization, configured Nginx with SSL on both development and live servers. Created Jenkins
+                  pipeline for the development server.</li>
+                <li><strong>Suricata integration with Kibana:</strong> Integrated SIEM tool to scan network and analyze
+                  captured data. Generated eve.json logs and forwarded them to Kibana dashboard for visualization.
+                  Deployed the entire stack using Docker.</li>
+                <li><strong>Flowdesigner:</strong> Deployed a React + PHP Laravel project on server using Docker for
+                  containerization, configured Nginx with SSL.</li>
+              </ul>
             </div>
-          </div>
-          <div class="hero-media">
-            <img src="Photo.jpg" alt="Photo of Varun Chavda" />
-          </div>
-        </div>
-      </section>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <section id="experience" class="section alt">
-        <div class="container">
-          <h2>Experience</h2>
-          <ul class="timeline">
-            <li>
-              <div class="time">December 2024 - Present</div>
-              <div class="content">
-                <h3>SrashtaSoft • DevOps Intern</h3>
-                <p>Hosted and scaled live websites on AWS (EC2, Load Balancer, VPC, CloudWatch, Route 53, S3), ensuring high availability and reliability.
-                  Implemented CI/CD pipelines using Jenkins and GitHub Actions, with custom workflows for automatic deployments on every code push.
-                  Managed on-premises production container using Docker and Docker-Compose.
-                  Hosted and managed WordPress websites on AWS and WebHost, including setup, deployment, DNS management, and WordPress website migration.
-                  Contributed to live projects by managing deployments, domain setups, and SSL configurations
-                  Managed on-premise servers hosting multiple websites in Docker containers, with monitoring for performance and availability.
-                </p>
-                <h4>Projects:</h4>
-                <ul>
-                  <li><strong>Automated PCAP Analysis Pipeline using AWS & Suricata:</strong> Built an event-driven security pipeline where network PCAP files uploaded to Amazon S3 trigger AWS Lambda to process data using a Suricata Docker image stored in Amazon ECR. Executed Suricata analysis inside containers and streamed generated EVE JSON security logs to Amazon CloudWatch for centralized monitoring.</li>
-                  <li><strong>Merizimmedari:</strong> Deployed a React + Django project on server using Docker for containerization, configured Nginx with SSL on both development and live servers. Created Jenkins pipeline for both development and production environments.</li>
-                  <li><strong>Digital Signage:</strong> Deployed a React + Django project on server using Docker for containerization, configured Nginx with SSL on both development and live servers. Created Jenkins pipeline for the development server.</li>
-                  <li><strong>Suricata integration with Kibana:</strong> Integrated SIEM tool to scan network and analyze captured data. Generated eve.json logs and forwarded them to Kibana dashboard for visualization. Deployed the entire stack using Docker.</li>
-                  <li><strong>Flowdesigner:</strong> Deployed a React + PHP Laravel project on server using Docker for containerization, configured Nginx with SSL.</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-lead">A selection of things I’ve worked on recently.</p>
+        <div id="projects-grid" class="grid">
+          <article class="card">
+            <a href="https://github.com/VarunChavda78/Strapi_ECS_CloudWatch" target="_blank" rel="noopener">
+              <div class="thumb">Strapi Application - on AWS ECS Fargate ↗</div>
+            </a>
+            <div class="body">
+              <h3>Strapi Application - on AWS ECS Fargate</h3>
+              <p>Containerized Strapi CMS with Docker &amp; Docker Compose, configured to use Amazon RDS PostgreSQL as
+                the external database. Provisioned complete AWS infrastructure using Terraform — including ECS cluster,
+                task definitions, Application Load Balancer, RDS PostgreSQL, IAM roles, and networking resources. Built
+                CI/CD pipelines with GitHub Actions, automating Docker image builds, pushes to ECR, and manual Terraform
+                deployments. Deployed Strapi on AWS ECS Fargate with Application Load Balancer for scalability and
+                availability. Integrated CloudWatch monitoring (logs, alarms, dashboards) for ECS service observability.
+                Optimized deployment costs using FARGATE_SPOT capacity provider.</p>
+              <div class="meta"><span class="badge">Terraform</span><span class="badge">GitHub Actions</span><span
+                  class="badge">Docker</span><span class="badge">AWS ECS Fargate</span><span class="badge">AWS RDS
+                  PostgreSQL</span><span class="badge">AWS IAM</span><span class="badge">AWS VPC</span><span
+                  class="badge">AWS Application Load Balancer</span><span class="badge">AWS CloudWatch</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb">High Availability Web Hosting on AWS</div>
+            <div class="body">
+              <h3>High Availability Web Hosting on AWS</h3>
+              <p>Hosted and scaled live websites using EC2, Load Balancer, VPC, Route 53, and S3. Configured DNS, SSL,
+                and domain management for production environments. Implemented Jenkins-based CI/CD pipelines for
+                automatic deployments on code push. Managed multiple Docker containers hosting websites in Linux
+                environment.</p>
+              <div class="meta"><span class="badge">AWS EC2</span><span class="badge">AWS Load Balancer</span><span
+                  class="badge">AWS VPC</span><span class="badge">AWS Route 53</span><span class="badge">AWS
+                  S3</span><span class="badge">Jenkins</span><span class="badge">Docker</span><span
+                  class="badge">Linux</span></div>
+            </div>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="projects" class="section">
-        <div class="container">
-          <h2>Projects</h2>
-          <p class="section-lead">A selection of things I’ve worked on recently.</p>
-          <div id="projects-grid" class="grid"></div>
-        </div>
-      </section>
-
-      <section id="about" class="section alt">
-        <div class="container">
-          <h2>About</h2>
-          <p>
-            I am a DevOps and Cloud enthusiast with practical experience in server management, AWS, Docker, and CI/CD. I enjoy building reliable systems, automating deployments, and contributing to smooth project delivery.
-          </p>
-        </div>
-      </section>
-
-      <section id="skills" class="section">
-        <div class="container">
-          <h2>Skills</h2>
-          <ul class="chips" aria-label="Skills">
-            <li>Cloud Platforms : AWS - EC2, ECS, S3, RDS, IAM, VPC, Route 53, CloudFront, ELB, lambda</li>
-            <li></li>
-            <li>Infrastructure as Code : Terraform</li>
-            <li>CI/CD : GitHub Actions, Jenkins</li>
-            <li>Containers & Orchestration : Docker, AWS ECS</li>
-            <li>Monitoring & Logging : Amazon CloudWatch, Prometheus, Grafana</li>
-            <li>Version Control : Git, GitHub</li>
-            <li>Scripting & Programming : Shell Scripting, Python</li>
-            <li>Basic Knowledge : Java, HTML, CSS, JS, React, Node, Express</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="container">
-          <h2>Contact</h2>
-          <p>Got a question or proposal, or just want to say hello? I’d love to hear from you.</p>
-          <div class="contact-actions">
-            <a class="btn primary" href="mailto:varunchavda078@gmail.com">varunchavda078@gmail.com</a>
-            <a class="btn" href="https://github.com/varunchavda78" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn" href="https://www.linkedin.com/in/varun-chavda-614369270/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> Varun Chavda. All rights reserved.</p>
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>About</h2>
         <p>
-          <a href="#home">Back to top ↑</a>
+          I am a DevOps and Cloud enthusiast with practical experience in server management, AWS, Docker, and CI/CD. I
+          enjoy building reliable systems, automating deployments, and contributing to smooth project delivery.
         </p>
       </div>
-    </footer>
+    </section>
 
-    <noscript>
-      JavaScript is disabled. The site works, but some interactive features are unavailable.
-    </noscript>
-  </body>
-  </html>
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="chips" aria-label="Skills">
+          <li>Cloud Platforms : AWS - EC2, ECS, S3, RDS, IAM, VPC, Route 53, CloudFront, ELB, lambda</li>
+          <li>Infrastructure as Code : Terraform</li>
+          <li>CI/CD : GitHub Actions, Jenkins</li>
+          <li>Containers & Orchestration : Docker, AWS ECS</li>
+          <li>Monitoring & Logging : Amazon CloudWatch, Prometheus, Grafana</li>
+          <li>Version Control : Git, GitHub</li>
+          <li>Scripting & Programming : Shell Scripting, Python</li>
+          <li>Basic Knowledge : Java, HTML, CSS, JS, React, Node, Express</li>
+        </ul>
+      </div>
+    </section>
 
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Got a question or proposal, or just want to say hello? I’d love to hear from you.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:varunchavda078@gmail.com">varunchavda078@gmail.com</a>
+          <a class="btn" href="https://github.com/varunchavda78" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/varun-chavda-614369270/" target="_blank"
+            rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Varun Chavda. All rights reserved.</p>
+      <p>
+        <a href="#home">Back to top ↑</a>
+      </p>
+    </div>
+  </footer>
+
+  <noscript>
+    JavaScript is disabled. The site works, but some interactive features are unavailable.
+  </noscript>
+</body>
+
+</html>
